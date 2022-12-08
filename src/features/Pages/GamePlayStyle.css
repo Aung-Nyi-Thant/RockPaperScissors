@@ -1,0 +1,95 @@
+.Stone {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    float: left;
+    border-radius: 20px;
+    margin-left: 120px;
+}
+
+.Emoji {
+    font-size: 50px;
+}
+
+.StartBtn {
+    border-color: white;
+    border: 1px solid #357cf6;
+    width: 120px;
+    color: #357cf6;
+    font-family: Copperplate;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    letter-spacing: 2px;
+}
+
+.StartBtn:hover {
+    background-color: #357cf6;
+    color: white;
+}
+
+.Paper {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    float: left;
+    border-radius: 20px;
+    margin-left: 120px;
+}
+
+.Marks {
+    font-size: 50px;
+    font-family: Copperplate;
+}
+
+.Scissors {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    float: left;
+    border-radius: 20px;
+    margin-left: 120px;
+}
+
+.NameText {
+    height: 20px;
+}
+
+.Iteam {
+    width: 1300px;
+    height: 200px;
+    margin-left: 190px;
+    margin-top: 10px;
+}
+
+.Waiting {
+    float: none;
+    margin-top: 70px;
+}
+
+.AiDiv {
+    width: 120px;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.UserDiv {
+    width: 120px;
+    box-shadow: 0 -10px 12px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.Iteam2 {
+    width: 1300px;
+    height: 200px;
+    margin-left: 190px;
+    margin-top: 10px;
+    margin-top: 80px;
+}
