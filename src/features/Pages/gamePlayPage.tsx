@@ -1,10 +1,12 @@
 import { Component} from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import './GamePlayStyle.css'
 export default function GamePlay(){
     function sleep(milliseconds:any) {  
         return new Promise(resolve => setTimeout(resolve, milliseconds));  
      }
+     let {Type} = useParams()
+     console.log(Type)
      let AiStone = false
      let AiPaper = false
      let AiScissors = false
@@ -21,7 +23,6 @@ export default function GamePlay(){
      let running = false
      let type = ""
      let navigate = useNavigate();
-     console.log("something")
      class Gameplay extends Component{
         
         // handleClick=()=>{
@@ -98,6 +99,9 @@ export default function GamePlay(){
                                 firstTouch = true
                                 secondTouch =false
                             }
+                            describe('PlayGame',()=>{
+                                expect(secondTouch == false)
+                             })
                             console.log("First Tag",firstTouch)
                             console.log("second touch ",secondTouch)
                             console.log("count",count)
@@ -152,61 +156,31 @@ export default function GamePlay(){
                             }
                             if(AiStone === true && UserScissors === true){
                                 console.log("You Lose")
-                                if(UserMark != 0 ){
-                                    this.setState({
-                                        UserMarks:this.state.UserMarks-1
-                                    })
-                                }
                                 this.setState({
                                     AiMarks:this.state.AiMarks+1
                                 })
                             }else if(UserStone === true && AiScissors === true){
                                 console.log("You Win")
-                                if(this.state.AiMarks != 0){
-                                    this.setState({
-                                        AiMarks:this.state.AiMarks-1
-                                    })
-                                }
                                 this.setState({
                                     UserMarks:this.state.UserMarks+1
                                 })
                             }else if(AiPaper === true && UserStone === true){
                                 console.log("You Lose")
-                                if(this.state.UserMarks != 0 ){
-                                    this.setState({
-                                        UserMarks:this.state.UserMarks-1
-                                    })
-                                }
                                 this.setState({
                                     AiMarks:this.state.AiMarks+1
                                 })
                             }else if(UserPaper === true && AiStone === true){
                                 console.log("You Win")
-                                if(this.state.AiMarks != 0){
-                                    this.setState({
-                                        AiMarks:this.state.AiMarks-1
-                                    })
-                                }
                                 this.setState({
                                     UserMarks:this.state.UserMarks+1
                                 })
                             }else if(AiScissors === true && UserPaper === true){
                                 console.log("You Lose")
-                                if(this.state.UserMarks != 0 ){
-                                    this.setState({
-                                        UserMarks:this.state.UserMarks-1
-                                    })
-                                }
                                 this.setState({
                                     AiMarks:this.state.AiMarks+1
                                 })
                             }else if(UserScissors === true && AiPaper == true){
                                 console.log("You Win")
-                                if(this.state.AiMarks != 0){
-                                    this.setState({
-                                        AiMarks:this.state.AiMarks-1
-                                    })
-                                }
                                 this.setState({
                                     UserMarks:this.state.UserMarks+1
                                 })

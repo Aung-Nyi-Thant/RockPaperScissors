@@ -15,7 +15,7 @@ export default function Celebrate(){
         <div>
             <div className="celebrate_div" style={{backgroundImage:`url('${backgroundImage}')`}}>
                 <button className='BtnNext' onClick={()=>{
-                    navigate(`/gamePlay`)
+                    navigate(`/`)
                 }}>{text}</button>
 
             </div>

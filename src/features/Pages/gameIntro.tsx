@@ -21,7 +21,7 @@ export default function GameIntro(){
                 <h1 className="ScissorsText">Scissors</h1>
             </div>
             <div onClick={()=>{
-                navigate("/gamePlay")
+                navigate("/type")
             }}><button className="PlayBtn"><h1 style={{"fontSize":"80px",color:"#f3943d",border:"none"}}>Play</h1></button></div>
             </div>
         </div>
