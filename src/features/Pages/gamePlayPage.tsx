@@ -21,6 +21,7 @@ export default function GamePlay(){
      let running = false
      let type = ""
      let navigate = useNavigate();
+     console.log("something")
      class Gameplay extends Component{
         
         // handleClick=()=>{
